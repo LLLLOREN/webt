@@ -60,11 +60,6 @@ function divide(){
     operate=1;
     calcul=4;
 }
-function persent(){
-    calculate();
-    operate=1;
-    calcul=5;
-}
 function equal(){
     calculate();
     operate=1;
@@ -82,7 +77,6 @@ function calculate(){
             case 2:result=num-numshow;break;
             case 3:result=num*numshow;break;
             case 4:if(numshow!=0){result=num/numshow;}else{document.getElementById("note").innerHTML="被除数不能为零！"; setTimeout(clearnote,4000)} break;
-            case 5:result=num%numshow;break;
         }
         quit=1;
     }
