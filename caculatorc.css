@@ -1,0 +1,24 @@
+li{
+    color: #ffffff;
+    font-family:Georgia;
+    text-align: center;
+    cursor:pointer;
+    border:white 2px;
+    list-style:none;
+    float:left;
+    width:32px;
+    height:32px;
+    margin:5px;
+    display:inline;
+    line-height:32px;
+    font-size:14px;
+    background-color:#555555;
+}
+ul{
+    padding:0;
+    margin:5px 14px;
+    border:#fff 1px solid;
+    height:auto;
+    width: 250px;
+    overflow:hidden
+}
