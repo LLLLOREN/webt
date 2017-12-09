@@ -2,7 +2,6 @@ let num=0,result=0,numshow="0";
 let operate=0;
 let calcul=0;
 let quit=0;
-let history=document.getElementsByName("history");
 function command(num){
     var str=String(document.calculator.numScreen.value);
     str=(str!="0") ? ((operate==0) ? str : "") : "";
@@ -76,7 +75,8 @@ function calculate(){
             case 1:result=num+numshow;break;
             case 2:result=num-numshow;break;
             case 3:result=num*numshow;break;
-            case 4:if(numshow!=0){result=num/numshow;}else{document.getElementById("note").innerHTML="被除数不能为零！"; setTimeout(clearnote,4000)} break;
+            case 4:if(numshow!=0){result=num/numshow;}
+                   else{document.getElementById("note").innerHTML="被除数不能为零！"; setTimeout(clearnote,4000)} break;
         }
         quit=1;
     }
